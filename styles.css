@@ -1,0 +1,32 @@
+/* Root variables for easier color and style customization */
+:root {
+  --container-bg-color: rgb(239, 236, 232);
+  --black-color: rgb(0, 0, 0);
+  --ingredient-input-focus: rgb(185, 58, 58);
+  --white-color: rgb(255, 255, 255);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures border and padding do not affect element width/height */
+}
+
+/* 1rem = 16px */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('images/burger-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

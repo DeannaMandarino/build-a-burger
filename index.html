@@ -4,7 +4,7 @@
   <!-- Meta tags for accessibility and SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Build your custom burger by adding and selecting from a variety of ingredients. Create your perfect burger from scratch and enjoy the fun of customization!">
   <meta name="author" content="Deanna Mandarino">
 
   <!-- Link to external CSS stylesheet -->
@@ -13,7 +13,7 @@
   <!-- Preconnect to improve font loading performance -->
   
 
-  <!-- Link to Google Fonts (Poppins)-->
+  <!-- Link to Google Fonts ()-->
   
 
   <!-- Favicon for the page -->
@@ -24,20 +24,27 @@
 </head>
 <body>
   <main class="burger-builder">
+    <!-- Header Section with Title and Description -->
     <header class="burger-builder__header">
       <h1 class="burger-builder__title">Build a Burger</h1>
       <p class="burger-builder__description">Customize your burger by adding ingredients below!</p>
     </header>
 
+    <!-- Section for displaying ingredients list -->
     <section class="burger-builder__ingredients">
       <ul class="burger-builder__ingredients-list">
         <li class="burger-builder__ingredient-item">Loading ingredients...</li>
       </ul>
     </section>
     
+    <!-- Section for the form to add new ingredients -->
     <section class="burger-builder__add-ingredient">
-      <form class="burger-builder__ingredient-form">
-        <input type="text" name="ingredient" class="burger-builder__ingredient-input" placeholder="Ingredient Name" aria-label="Enter the name of the ingredient" required>
+      <form class="burger-builder__ingredient-form" action="#" method="post">
+        <!-- Hidden label for accessibility (screen readers) -->
+        <label for="ingredient-name" class="burger-builder__ingredient-label sr-only">Ingredient Name</label>
+        <input type="text" name="ingredient" id="ingredient-name" class="burger-builder__ingredient-input" placeholder="Ingredient Name" aria-label="Enter the name of the ingredient" required>
+
+        <!-- Button to submit the form -->
         <button type="submit" class="burger-builder__add-button">+ Add Ingredient</button>
       </form>
     </section>

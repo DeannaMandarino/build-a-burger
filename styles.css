@@ -30,3 +30,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* Container styles */
+.burger-builder {
+  background-color: var(--container-bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  width: 65%;
+  max-width: 37.5rem;
+}
+
+/* Header styles */
+.burger-builder__header {
+  text-align: center;
+  margin-bottom: 1.563rem;
+}
+
+/* Title styling */
+.burger-builder__title {
+  text-transform: uppercase;
+  margin-bottom: 0.313rem;
+}
+
+/* Description styling */
+.burger-builder__description {
+  font-size: 1.1875rem;
+  font-size: clamp(1.1875rem, 1.125rem + 0.3125vw, 1.5rem);
+}

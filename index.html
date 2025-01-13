@@ -23,7 +23,26 @@
   <title>Build a Burger</title>
 </head>
 <body>
-  
+  <main class="burger-builder">
+    <header class="burger-builder__header">
+      <h1 class="burger-builder__title">Build a Burger</h1>
+      <p class="burger-builder__description">Customize your burger by adding ingredients below!</p>
+    </header>
+
+    <section class="burger-builder__ingredients">
+      <ul class="burger-builder__ingredients-list">
+        <li class="burger-builder__ingredient-item">Loading ingredients...</li>
+      </ul>
+    </section>
+    
+    <section class="burger-builder__add-ingredient">
+      <form class="burger-builder__ingredient-form">
+        <input type="text" name="ingredient" class="burger-builder__ingredient-input" placeholder="Ingredient Name" aria-label="Enter the name of the ingredient" required>
+        <button type="submit" class="burger-builder__add-button">+ Add Ingredient</button>
+      </form>
+    </section>
+  </main>
+
   <!-- External JavaScript file linked with defer to improve page load -->
   <script src="script.js" defer></script>
 </body>

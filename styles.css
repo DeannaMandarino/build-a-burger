@@ -59,3 +59,35 @@ body {
   font-size: 1.1875rem;
   font-size: clamp(1.1875rem, 1.125rem + 0.3125vw, 1.5rem);
 }
+
+/* Ingredients section styles */
+.burger-builder__ingredients {
+  width: 100%;
+}
+
+/* List styles */
+.burger-builder__ingredients-list {
+  margin-bottom: 1.563rem;
+  list-style-type: none;
+}
+
+/* Hide checkboxes */
+.burger-builder__ingredients-list input {
+  display: none;
+}
+
+/* Custom checkbox styles for the ingredients list */
+.burger-builder__ingredients-list input + label:before {
+  content: "⬜️";
+  margin-right: 0.625rem;
+}
+
+/* Change the checkbox to a checked emoji when the input is checked */
+.burger-builder__ingredients-list input:checked + label:before {
+  content: "🍔";
+}
+
+/* Individual ingredient item styling */
+.burger-builder__ingredient-item {
+  margin-bottom: 0.625rem;
+}
